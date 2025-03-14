@@ -1,0 +1,106 @@
+/* Ensure chatbot container is positioned correctly */
+#chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+/* Chat button (small) */
+.chat-button {
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.chat-button:hover {
+    background-color: #0056b3;
+}
+
+/* Chat icon (chat bubble) */
+.chat-icon {
+    font-size: 24px;
+}
+
+/* Chat window (hidden initially) */
+.chat-window {
+    display: none;  /* Hidden initially */
+    position: absolute;
+    bottom: 70px; /* Make sure it's not covered by the chat button */
+    right: 0;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures content does not spill out */
+    border: 1px solid #ddd;
+}
+
+/* Chat header (close button) */
+#chat-header {
+    background-color: #007bff;
+    padding: 10px;
+    color: white;
+    text-align: right;
+}
+
+.close-chat {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Messages container */
+.chat-messages {
+    padding: 10px;
+    height: calc(100% - 80px); /* Adjust based on header and input container height */
+    overflow-y: auto; /* Allows scrolling when content exceeds height */
+    background-color: #f9f9f9;
+}
+
+/* Input container */
+#chat-input-container {
+    display: flex;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ddd;
+}
+
+#chat-input {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#send-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#send-btn:hover {
+    background-color: #0056b3;
+}
+
+.option-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.option-btn:hover {
+    background-color: #0056b3;
+}
