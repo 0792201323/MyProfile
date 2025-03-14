@@ -215,3 +215,94 @@ h2::after {
 .footer a:hover {
     color: #ff9900;
 }
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .about-container {
+        gap: 30px;
+    }
+
+    .about-text {
+        max-width: 500px;
+    }
+
+    .profile-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-details .education, .about-details .certificates, .about-details .skills {
+        width: 45%;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .about-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-details .education, .about-details .certificates, .about-details .skills {
+        width: 100%;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.8em;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project {
+        padding: 15px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    .footer a {
+        font-size: 18px;
+    }
+}
