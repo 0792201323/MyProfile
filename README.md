@@ -44,7 +44,7 @@ To get this project up and running on your local machine, follow these steps:
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/your-username/portfolio.git
+   git clone https://github.com/0792201323/portfolio.git
 Navigate into the project directory:
 
 bash
