@@ -37,47 +37,6 @@
                 <img src="Ongako.jpeg" alt="Ongako Somafu" class="profile-img">
             </div>
         </div>
-        <div class="about-details">
-            <div class="education">
-                <h3>Education</h3>
-                <div>
-                    <h5>Bachelor of Commerce Honours in Information Systems</h5>
-                    <p>Focused on the strategic use of information systems to drive business efficiency and innovation.</p>
-                </div>
-                <div>
-                    <h5>Bachelor of Commerce in Information Systems</h5>
-                    <p>Combining business acumen with technology to optimize business processes.</p>
-                </div>
-                <div>
-                    <h5>National Senior Certificate</h5>
-                    <p>Completed with excellence.</p>
-                </div>
-            </div>
-            <div class="certificates">
-                <h3>Certifications</h3>
-                <div>
-                    <h5>SAP Certifications</h5>
-                    <p>• SAP Certified Associate - Business Process Integration<br>• SAP Certified Specialist - SAP S/4HANA Private Cloud Edition</p>
-                </div>
-                <div>
-                    <h5>Microsoft Certifications</h5>
-                    <p>• Microsoft Certified: Azure Fundamentals<br>• Microsoft Certified: Azure Data Fundamentals<br>• Microsoft Certified: Power BI Data Analyst Associate</p>
-                </div>
-                <div>
-                    <h5>Cisco Certifications</h5>
-                    <p>• Introduction to Cybersecurity<br>• Introduction to Data Science</p>
-                </div>
-            </div>
-            <div class="skills">
-                <h3>Skills</h3>
-                <ul>
-                    <li>HTML, CSS, JavaScript</li>
-                    <li>C#, Excel, Microsoft Power BI</li>
-                    <li>Firebase, Microsoft Visio</li>
-                    <li>JIRA, SAP systems</li>
-                </ul>
-            </div>
-        </div>
     </section>
     
     <section id="projects" class="fade-in">
@@ -126,6 +85,27 @@
         </div>
     </section>
     
+    <!-- Chatbot UI -->
+    <div id="chatbot-container">
+        <div id="chat-button" class="chat-button">
+            <span id="chat-icon" class="chat-icon">💬</span> <!-- Chat bubble icon -->
+        </div>
+        <div id="chat-window" class="chat-window">
+            <div id="chat-header">
+                <button id="close-chat" class="close-chat">✖️</button>
+            </div>
+            <div id="chat-messages" class="chat-messages"></div>
+            <div id="options-container" class="options-container"></div>
+            <div id="chat-input-container">
+                <input type="text" id="chat-input" placeholder="Type a message...">
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+    
+
+
+    
     <footer class="footer">
         <div class="container">
             <a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
@@ -134,5 +114,7 @@
             <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
         </div>
     </footer>
+    
+    <script src="scripts.js"></script>
 </body>
 </html>
